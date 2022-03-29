@@ -5,82 +5,127 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1862, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1840, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1496, server: 38.64.138.145, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1837, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1145, server: 38.64.138.145, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1499, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1143, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
-  - {name: US_1529, server: 38.64.138.145, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1547, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1854, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: US_1860, server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1513, server: 38.64.138.145, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1124, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb, server: fkgfw-prod.i.sxl.cn, port: 443, type: ss, cipher: aes-256-cfb, password: E4DNMf73kHPrd8Qq7aqGPf7f, udp: true}
+  - {name: US_1125, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: 38.64.138.145:6697, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: 38.64.138.145:3389, server: 38.64.138.145, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1108, server: 38.64.138.145, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: US_1098, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: US_1042, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1107, server: 38.64.138.145, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1124, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: US_1122, server: 38.64.138.145, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1142, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_688, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1134, server: 38.64.138.145, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1129, server: 38.64.138.145, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: 38.64.138.145:8009, server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_685, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1143, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: 38.64.138.145:5600, server: 38.64.138.145, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1120, server: 38.64.138.145, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1105, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
+  - {name: US_1145, server: 38.64.138.145, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1144, server: 38.64.138.145, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1126, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_711, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: NONE, server: dayoocn.xyz, port: 443, type: trojan, password: !<str> 12333365, sni: dayoocn.xyz, skip-cert-verify: true, udp: true}
+  - {name: 233v2.com_ss_132.226.235.85, server: 132.226.235.85, port: 62634, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -99,21 +144,32 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -124,62 +180,95 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -195,21 +284,32 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - US_1862
-      - US_1840
-      - US_1496
-      - US_1837
-      - US_1145
-      - US_1499
-      - US_1143
-      - US_1529
-      - US_1547
-      - US_1854
-      - US_1860
-      - 38.64.138.145:5600
-      - US_1513
-      - US_1124
+      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
+      - US_1125
+      - 38.64.138.145:6697
+      - 38.64.138.145:3389
+      - US_1108
+      - US_1098
       - US_1042
+      - US_1107
+      - US_1124
+      - US_1122
+      - US_1142
+      - US_688
+      - US_1134
+      - US_1129
+      - 38.64.138.145:8009
+      - US_685
+      - US_1143
+      - 38.64.138.145:5600
+      - US_1120
+      - US_1105
+      - US_1145
+      - US_1144
+      - US_1126
+      - US_711
+      - NONE
+      - 233v2.com_ss_132.226.235.85
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
