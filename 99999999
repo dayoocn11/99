@@ -5,126 +5,147 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: US_1125, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: 38.64.138.145:6697, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: 38.64.138.145:3389, server: 38.64.138.145, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1108, server: 38.64.138.145, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
-  - {name: US_1098, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_1042, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: US_1107, server: 38.64.138.145, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_1124, server: 38.64.138.145, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: US_1122, server: 38.64.138.145, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1142, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_688, server: 38.64.138.145, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: US_1134, server: 38.64.138.145, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1129, server: 38.64.138.145, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: 38.64.138.145:8009, server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: US_685, server: 38.64.138.145, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1143, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
+  - {name: Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb, server: 183.232.56.161, port: 9111, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: CN_31 |25.42Mb, server: 183.232.56.161, port: 1952, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: KR_62 |21.08Mb, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, sni: jgw2.gaox.ml, skip-cert-verify: true, udp: true}
+  - {name: NL_672 |25.99Mb, server: kr3.uuv2.co.uk, port: 2063, type: vmess, uuid: 79c269d0-f5bd-4217-93d0-a7fb475be413, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: kr3.uuv2.co.uk}, udp: true}
+  - {name: Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb, server: 183.232.56.161, port: 1612, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: CN_43 |15.11Mb, server: 183.232.56.161, port: 1101, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb, server: 183.232.56.161, port: 5019, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: Relay_🇺🇸US-🇺🇸US_2041, server: s5.walkunderground.com, port: 50066, type: vmess, uuid: fc4dae6a-d89f-4f0a-a3ae-7499f853f8ba, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb, server: 183.240.132.27, port: 13823, type: vmess, uuid: 88106789-affc-3366-a7e6-f8fb34308b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: v2ray, ws-headers: {Host: 183.240.132.27}, udp: true}
+  - {name: Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb, server: 183.232.56.161, port: 1201, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb, server: 183.232.56.161, port: 5018, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb, server: 183.232.56.161, port: 6112, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: CN_32 |14.70Mb, server: 183.232.56.161, port: 1704, type: vmess, uuid: 3a226645-c640-39a2-8177-000381e29f20, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /v2ray, ws-headers: {Host: 183.232.56.161}, udp: true}
+  - {name: US_1499, server: 38.64.138.145, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1854, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+  - {name: US_1525, server: 38.64.138.145, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1559, server: 38.64.138.145, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb, server: zh01lv5hk03.feiguayun.xyz, port: 11087, type: ss, cipher: aes-256-gcm, password: 9cbe4cd7-f5e2-48fb-aec4-a9d2ba3b1872, udp: true}
+  - {name: US_1513, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1860, server: 38.64.138.145, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1862, server: 38.64.138.145, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
+  - {name: US_1539, server: 38.64.138.145, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG, udp: true}
+  - {name: Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb, server: zh01lv5sgp01.feiguayun.xyz, port: 34087, type: ss, cipher: aes-256-gcm, password: 9cbe4cd7-f5e2-48fb-aec4-a9d2ba3b1872, udp: true}
+  - {name: US_1509, server: 38.64.138.145, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: US_1541, server: 38.64.138.145, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: US_1544, server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: US_1496, server: 38.64.138.145, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: US_1515, server: 38.64.138.145, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: US_1547, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: 38.64.138.145:5600, server: 38.64.138.145, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1120, server: 38.64.138.145, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: US_1105, server: 38.64.138.145, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: US_1145, server: 38.64.138.145, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1144, server: 38.64.138.145, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: US_1126, server: 38.64.138.145, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: US_711, server: 38.64.138.145, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
-  - {name: NONE, server: dayoocn.xyz, port: 443, type: trojan, password: !<str> 12333365, sni: dayoocn.xyz, skip-cert-verify: true, udp: true}
-  - {name: 233v2.com_ss_132.226.235.85, server: 132.226.235.85, port: 62634, type: ss, cipher: aes-256-gcm, password: 233blog.com, udp: true}
+  - {name: US_1143, server: 38.64.138.145, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -143,32 +164,37 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -179,95 +205,110 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -283,32 +324,37 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - Relay_🇨🇳CN-🇭🇰HK_20 |16.78Mb
-      - US_1125
-      - 38.64.138.145:6697
-      - 38.64.138.145:3389
-      - US_1108
-      - US_1098
-      - US_1042
-      - US_1107
-      - US_1124
-      - US_1122
-      - US_1142
-      - US_688
-      - US_1134
-      - US_1129
-      - 38.64.138.145:8009
-      - US_685
-      - US_1143
+      - Relay_🇨🇳CN-🇮🇷IR_80 | 2.94Mb
+      - CN_31 |25.42Mb
+      - KR_62 |21.08Mb
+      - NL_672 |25.99Mb
+      - Relay_🇨🇳CN-🇭🇰HK_75 | 2.77Mb
+      - CN_43 |15.11Mb
+      - Relay_🇨🇳CN-🇲🇾MY_67 | 5.87Mb
+      - Relay_🇺🇸US-🇺🇸US_2041
+      - Relay_🇨🇳CN-🇺🇸US_70 |11.96Mb
+      - Relay_🇨🇳CN-🇯🇵JP_58 | 1.88Mb
+      - Relay_🇨🇳CN-🇲🇾MY_57 | 7.52Mb
+      - Relay_🇨🇳CN-🇹🇷TR_68 | 3.10Mb
+      - CN_32 |14.70Mb
+      - US_1499
+      - US_1854
+      - US_1525
+      - US_1559
+      - Relay_🇨🇳CN-🇺🇸US_27 | 2.14Mb
+      - US_1513
+      - US_1860
+      - US_1862
+      - US_1539
+      - Relay_🇨🇳CN-🇯🇵JP_12 | 1.95Mb
+      - US_1509
+      - US_1541
+      - US_1544
+      - US_1496
+      - US_1515
+      - US_1547
       - 38.64.138.145:5600
-      - US_1120
-      - US_1105
-      - US_1145
-      - US_1144
-      - US_1126
-      - US_711
-      - NONE
-      - 233v2.com_ss_132.226.235.85
+      - US_1143
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
